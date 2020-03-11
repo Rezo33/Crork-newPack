@@ -224,6 +224,8 @@
 
 .image-2 img{
 	object-fit: contain;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 .image-3{
@@ -400,11 +402,18 @@
 		margin-bottom: 0;
 	}
 
+	.item-2{
+		flex-direction: column;
+	}
+
 	.item{
 		height: auto;
 		padding: 0;
 		border-radius:0;
 		width: 100%;
+		display: flex;
+   		justify-content: center;
+   		box-shadow: none;
 
 	}
 	.image-1{
@@ -415,6 +424,7 @@
 	.description{
 		width: 100%;
 		text-align: center;
+		padding-right: 0;
 	}
 	.image-2{
 		width: 100%;
@@ -461,4 +471,13 @@
 	#buy-btn-lb{
 		width: 200px;
 	}
+
+	.btn-span{
+		width: 100%;
+	}
+	.btn-span:hover{
+		border-radius: 0;
+	}
 }
+}
+
