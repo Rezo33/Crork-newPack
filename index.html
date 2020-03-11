@@ -4,7 +4,6 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Geo|Lato&display=swap" rel="stylesheet">
-
 </head>
 <body>
 	<div class="container">
@@ -42,19 +41,38 @@
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
-					<div class="item item-2">
-						<div class="description description-2">
-							<h2>Second Case </h2>
-							<p class="text"><span>Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class=" image-2"><img class="image" src="2.jpg"></div>
+					<div  id="app" class="item item-2">
+						<span @click='decrement' class="btn-span btn-span-left"><button class="left" ></button></span>
+						
+							<div v-if="counter === 0" class="carousel">
+								<div class=" description-2">
+									<h2>First Case </h2>
+								</div>
+								<div class=" image-2"><img class="image" src="11.jpg"></div>
+							</div>
+							<div v-if="counter === 1" class="carousel">
+								<div class=" description-2">
+									<h2>Second Case </h2>
+								</div>
+								<div class=" image-2"><img class="image" src="22.jpg"></div>
+							</div>
+							<div v-if="counter === 2" class="carousel">
+								<div class=" description-2">
+									<h2>Third Case </h2>
+								</div>
+								<div class=" image-2"><img class="image" src="33.jpg"></div>
+							</div>
+							<div v-if="counter === 3" class="carousel">
+								<div class=" description-2">
+									<h2>Fourth Case </h2>
+								</div>
+								<div class=" image-2"><img class="image" src="44.jpg"></div>
+							</div>
+						
+						<span class="btn-span btn-span-right" @click='increment'><button class="right" ></button></span>
 					</div>
 					<div class="item item-3">
+						
 						<div class=" image-3"><img class="image" src="3.jpg"></div>
 						<div class="description description-3">
 							<h2>Third Case </h2>
@@ -65,6 +83,7 @@
 							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
+						
 					</div>
 				</div>
 				
@@ -118,5 +137,8 @@
 			</div>
 		
 	</div>
+
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
 </body>
 </html>
