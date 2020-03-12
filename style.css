@@ -331,6 +331,7 @@
 	font-size: 20px;
 	line-height: 1.6;
 	padding: 10px;
+	font-family: Lato;
 }
 
 .text-buy{
@@ -396,7 +397,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding: 50px 0 50px 0;
+	padding: 80px 0 50px 0;
 }
 
 .navbar-toggler{
@@ -404,7 +405,9 @@
 }
 	
 @media  (max-width: 800px) {
-
+	.carousel{
+		width: 100%;
+	}
 
 	.col-6{
 		width: 100%;
@@ -518,10 +521,6 @@
 	}
 	.text{
 		font-size: 16px;
-	}
-
-	.text::before{
-		padding:0 7px;
 	}
 
 	.item-4{
