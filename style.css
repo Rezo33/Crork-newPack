@@ -120,8 +120,32 @@
 	background-image: url(5.jpg);
 	background-size: cover;
     background-position: center;
+    align-items: center;
 }
 
+.last-price{
+	color: red;
+	text-decoration: line-through;
+}
+
+.new-price{
+	color: green;
+}
+
+.price{
+	width: 50%;
+	font-size: 100px;
+	text-align: center;
+}
+
+.discount{
+	width: 450px;
+    height: 100px;
+    margin-top: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content:space-between;
+}
 
 .item{
 	width: 70%;
